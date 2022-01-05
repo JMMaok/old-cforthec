@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+@page "/"
+<head>
+    <meta charset="utf-8" />
+    <title>Code for the Carolinas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Code Better Carolinas.</h1>
+        <p class="lead">Join us in using civic tech to make the Carolinas an even better place to live.</p>
+        <hr class="my-4">
+        <p class="lead">Next Meeting: November 32, 2021 at 6:00 p.m.</p>
+        <MudButton Link="https://www.meetup.com/open-nc-collaborative/"
+                   Target="_blank"
+                   Variant="Variant.Filled"
+                   EndIcon="fab fa-meetup"
+                   Color="Color.Primary" style="background-color:#AF121D;">
+            RSVP
+        </MudButton>
+        <MudButton Link="https://www.meetup.com/open-nc-collaborative/"
+                   Target="_blank"
+                   Variant="Variant.Filled"
+                   EndIcon="fab fa-slack"
+                   Color="Color.Primary" style="background-color:#AF121D;">
+            JOIN OUR SLACK
+        </MudButton>
+    </div>
+
+    <h2>Who are we?</h2>
+
+    <p>We’re part of a national alliance of community organizers, developers, and designers that are putting technology to work in service of our local communities. We believe that government can work, for the people, by the people, in the digital age, if we all help.</p>
+
+
+    <div style="padding-top: 2em; padding-bottom:2em;">
+        <h2>Current Projects</h2>
+        <MudPaper Class="d-flex justify-center">
+            <MudCard>
+                <MudCardMedia Image="_content/MudBlazor.Docs/images/content-template-door.png" Height="200" />
+                <MudCardContent>
+                    <MudText Typo="Typo.h5">Old Paint</MudText>
+                    <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
+                    <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+                </MudCardActions>
+            </MudCard>
+            <MudCard>
+                <MudCardMedia Image="_content/MudBlazor.Docs/images/content-template-door.png" Height="200" />
+                <MudCardContent>
+                    <MudText Typo="Typo.h5">Old Paint</MudText>
+                    <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
+                    <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+                </MudCardActions>
+            </MudCard>
+            <MudCard>
+                <MudCardMedia Image="_content/MudBlazor.Docs/images/content-template-door.png" Height="200" />
+                <MudCardContent>
+                    <MudText Typo="Typo.h5">Old Paint</MudText>
+                    <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
+                    <MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudPaper>
+    </div>
+
+
+</body>
+
+@code{
+    private bool arrows = true;
+    private bool delimiters = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
+}
+</html>

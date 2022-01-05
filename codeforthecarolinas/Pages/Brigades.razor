@@ -1,0 +1,78 @@
+﻿@page "/brigades"
+@inject HttpClient Http
+@using System.Net.Http.Json
+
+
+<h1>Brigades</h1>
+
+<p>Code for the Carolinas is a state-wide Code for America brigade that consists of several smaller city-based brigades. If you don't live near one of these brigades, don't worry. You can start a project with CfC no matter where you live.</p>
+
+<img src="staticBrigadeMap_carolinaBrigadesMap.svg" style="width:20em; margin:0 auto;">
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Brigade</th>
+            <th scope="col">City</th>
+            <th scope="col">Meetup</th>
+            <th scope="col">Website</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Code for Cape Fear</td>
+            <td>Wilmington, NC</td>
+            <td><a href="https://www.meetup.com/Code-for-Cape-Fear/" target="_blank">https://www.meetup.com/Code-for-Cape-Fear/</a></td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>Open Raleigh Brigade</td>
+            <td>Raleigh, NC</td>
+            <td><a href="https://www.meetup.com/Triangle-Code-for-America/" target="_blank">https://www.meetup.com/Triangle-Code-for-America/</a></td>
+            <td><a href="http://ncopenpass.com" target="_blank">http://ncopenpass.com</a> </td>
+        </tr>
+        <tr>
+            <td>Code for Durham</td>
+            <td>Durham, NC</td>
+            <td><a href="https://www.meetup.com/Triangle-Code-for-America/" target="_blank">https://www.meetup.com/Triangle-Code-for-America/</a></td>
+            <td><a href="https://codefordurham.com" target="_blank">https://codefordurham.com</a></td>
+        </tr>
+        <tr>
+            <td>Code for Chapel Hill</td>
+            <td>Chapel Hill, NC</td>
+            <td><a href="https://www.meetup.com/Triangle-Code-for-America" target="_blank">https://www.meetup.com/Triangle-Code-for-America</a></td>
+            <td><a href="http://www.codeforchapelhill.com" target="_blank">http://www.codeforchapelhill.com</a> </td>
+        </tr>
+        <tr>
+            <!--<th scope="row">3</th>-->
+            <td>Code for Greensboro</td>
+            <td>Greensboro, NC</td>
+            <td><a href="https://www.meetup.com/Code-for-Greensboro/" target="_blank">https://www.meetup.com/Code-for-Greensboro/</a></td>
+            <td><a href="https://codeforgreensboro.org" target="_blank">https://codeforgreensboro.org</a></td>
+        </tr>
+        <tr>
+            <!--<th scope="row">3</th>-->
+            <td>Open Charlotte Brigade</td>
+            <td>Charlotte, NC</td>
+            <td><a href="https://www.meetup.com/Open-Charlotte-Brigade/" target="_blank">https://www.meetup.com/Open-Charlotte-Brigade/</a></td>
+            <td><a href="https://opencharlotte.org" target="_blank">https://opencharlotte.org</a></td>
+        </tr>
+        <tr>
+            <td>Code for Greenville</td>
+            <td>Greenville, SC</td>
+            <td><a href="https://www.meetup.com/Code-for-Greenville/" target="_blank">https://www.meetup.com/Code-for-Greenville/</a></td>
+            <td><a href="https://codeforgreenville.org" target="_blank">https://codeforgreenville.org</a></td>
+        </tr>
+        <tr>
+            <td>Code for Ashville</td>
+            <td>Ashville, NC</td>
+            <td><a href="https://www.meetup.com/Code-for-Asheville/" target="_blank">https://www.meetup.com/Code-for-Asheville/</a></td>
+            <td><a href="https://www.codeforasheville.org" target="_blank">https://www.codeforasheville.org</a></td>
+        </tr>
+    </tbody>
+</table>
+
+@code {
+
+
+}

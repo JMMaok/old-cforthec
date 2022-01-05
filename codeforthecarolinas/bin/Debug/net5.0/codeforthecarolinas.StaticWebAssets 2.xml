@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="/Users/ewmcelvaney/Desktop/Code for the Carolinas/codeforthecarolinas/codeforthecarolinas/codeforthecarolinas/bin/Debug/net5.0/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Users/ewmcelvaney/Desktop/Code for the Carolinas/codeforthecarolinas/codeforthecarolinas/codeforthecarolinas/obj/Debug/net5.0/scopedcss/bundle/" />
+  <ContentRoot BasePath="_content/MudBlazor" Path="/Users/ewmcelvaney/.nuget/packages/mudblazor/5.2.0/build/../staticwebassets/" />
+</StaticWebAssets>

@@ -1,0 +1,161 @@
+@import '';
+
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-nusibtxbcd] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main[b-nusibtxbcd] {
+    flex: 1;
+}
+
+.sidebar[b-nusibtxbcd] {
+    background-color: #002868;
+}
+
+.top-row[b-nusibtxbcd] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-nusibtxbcd]  a, .top-row .btn-link[b-nusibtxbcd] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-nusibtxbcd] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-nusibtxbcd] {
+        display: none;
+    }
+
+    .top-row.auth[b-nusibtxbcd] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-nusibtxbcd], .top-row .btn-link[b-nusibtxbcd] {
+        margin-left: 0;
+    }
+
+    .sidebar[b-nusibtxbcd]{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+
+    body[b-nusibtxbcd]{
+        margin-top: 12em;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-nusibtxbcd] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-nusibtxbcd] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-nusibtxbcd] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .main > div[b-nusibtxbcd] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    
+}
+
+.sidebar[b-nusibtxbcd][b-nusibtxbcd] {
+    background-color: #002868;
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-ay4z0m1tld] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand[b-ay4z0m1tld] {
+    font-size: 1.1rem;
+}
+
+.oi[b-ay4z0m1tld] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-ay4z0m1tld] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-ay4z0m1tld] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-ay4z0m1tld] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-ay4z0m1tld]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-ay4z0m1tld]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-ay4z0m1tld]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-ay4z0m1tld] {
+        display: none;
+    }
+
+    .collapse[b-ay4z0m1tld] {
+        Never collapse the sidebar for wide screens 
+        display: block;
+    }
+
+    #brigadeLogo[b-ay4z0m1tld] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640.98px) {
+
+    #brigadeLogo[b-ay4z0m1tld] {
+        width: 35%;
+        display:block;
+        margin: 0 auto;
+    }
+
+}

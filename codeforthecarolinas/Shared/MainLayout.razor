@@ -1,0 +1,24 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <!--div class="top-row px-4">
+        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+    </div>-->
+
+        <div class="content px-4">
+            @Body
+        </div>
+        <footer style="padding-left:3%;">
+            <img src="black_cfa_brigade_logo.png" style="width:15%; padding:0.5%;" />
+            <p>Code for the Carolinas 2021. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.</p>
+        </footer>
+    </div>
+</div>
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />

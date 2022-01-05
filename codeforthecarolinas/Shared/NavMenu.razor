@@ -1,0 +1,47 @@
+﻿<div class="top-row pl-4 navbar navbar-dark" style="background-color:#002868; padding-bottom: 9em; padding-top: 3em;">
+    <a class="navbar-brand" href=""><img src="cfcLogo.svg" id="brigadeLogo" onerror="this.onerror = null; this.src='cfcLogo.png'"></a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <MudIcon Icon="fas fa-home" aria-hidden="true" style="margin-right:0.5em;" /> Home
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="about">
+                <MudIcon Icon="far fa-question-circle" aria-hidden="true" style="margin-right:0.5em;" />  About
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="brigades">
+                <MudIcon Icon="fas fa-flag-usa" aria-hidden="true" style="margin-right:0.5em;" />  Brigades
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="https://www.codeforamerica.org/code-of-conduct/">
+                <MudIcon Icon="fas fa-gavel" aria-hidden="true" style="margin-right:0.5em;" />  Code of Conduct
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <MudIcon Icon="far fa-address-book" aria-hidden="true" style="margin-right:0.5em;" />  Contact
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

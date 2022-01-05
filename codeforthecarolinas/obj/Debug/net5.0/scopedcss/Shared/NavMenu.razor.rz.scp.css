@@ -1,0 +1,71 @@
+.navbar-toggler[b-ay4z0m1tld] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand[b-ay4z0m1tld] {
+    font-size: 1.1rem;
+}
+
+.oi[b-ay4z0m1tld] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-ay4z0m1tld] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-ay4z0m1tld] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-ay4z0m1tld] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-ay4z0m1tld]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-ay4z0m1tld]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-ay4z0m1tld]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-ay4z0m1tld] {
+        display: none;
+    }
+
+    .collapse[b-ay4z0m1tld] {
+        Never collapse the sidebar for wide screens 
+        display: block;
+    }
+
+    #brigadeLogo[b-ay4z0m1tld] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640.98px) {
+
+    #brigadeLogo[b-ay4z0m1tld] {
+        width: 35%;
+        display:block;
+        margin: 0 auto;
+    }
+
+}
